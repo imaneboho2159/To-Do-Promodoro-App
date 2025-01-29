@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+body{
+    background-color: #64F2FF;
+}
+.navbar {
+background-color:#6FFFCD;
+height: 71px;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 46px;
+}
+.btn{
+background-color : #6FFFCD;
+border-color: black;
+}
+#cont-1{
+    background-color: rgb(255, 255, 255);
+    border-radius: 4%;
+    width: 53%;
+}
