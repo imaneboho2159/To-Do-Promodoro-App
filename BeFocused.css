@@ -27,8 +27,12 @@ width: 21%;
 }
 #cont-1{
     background-color: rgb(255, 255, 255);
-    border-radius: 4%;
+    border-radius: 1%;
     width: 53%;
+    height: 72%;
+    margin-left: 23%;
+    margin-top: 3%;
+
 }
 #pomodoro-section{
 
@@ -70,4 +74,44 @@ width: 21%;
 }
 #long-break{
     width: 34%;
+}
+@media screen and (max-width: 600px) {
+    #cont-1{
+        width: 96%;
+        margin-left: 2%;
+    }
+    #pomodoro-section{
+        width: 93%;
+    }
+    #work-duration{
+        width: 30%;
+    }
+    #short-break{
+        width: 30%;
+    }
+    #long-break{
+        width: 30%;
+    }
+    #start-btn{
+        width: 25%;
+    }
+    #pause-btn{
+        width: 25%;
+    }
+    #reset-btn{
+        width: 25%;
+    }
+    .btn{
+        width: 29%;
+    }
+    #timer-controls{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-brand {
+        font-size: 30px;
+    }
+    #completed-cycles{ 
+        font-size: large;
+    }
 }
