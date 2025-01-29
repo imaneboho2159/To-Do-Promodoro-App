@@ -14,12 +14,60 @@ height: 71px;
     font-family: cursive;
     font-size: 46px;
 }
+h2{
+    font-family: cursive;
+}
+
 .btn{
 background-color : #6FFFCD;
 border-color: black;
+font-family: cursive;
+width: 21%;
+
 }
 #cont-1{
     background-color: rgb(255, 255, 255);
     border-radius: 4%;
     width: 53%;
+}
+#pomodoro-section{
+
+    background-color: #ffffff;
+    border-radius: 4%;
+    width: 69%;
+    height: 72%;
+}
+#time-display{
+    font-weight: bolder;
+}
+#start-btn{
+    width: 21%;
+     font-family: cursive;
+}
+#pause-btn{
+    width: 21%;
+    font-family: cursive;
+}#reset-btn{
+    width: 21%;
+    font-family: cursive;
+}
+.col-md-4{
+    display: flex;
+    flex-direction: column;
+}
+.form-label{
+    font-family: cursive;
+}
+#completed-cycles{
+    font-family: cursive; 
+    font-size: xx-large;
+}
+#work-duration{
+    width: 34%;
+}
+#short-break{
+    width: 34%;
+}
+#long-break{
+    width: 34%;
 }
