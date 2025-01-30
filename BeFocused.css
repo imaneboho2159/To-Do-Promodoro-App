@@ -41,6 +41,46 @@ width: 21%;
     width: 69%;
     height: 72%;
 }
+.complete-btn{
+    background-color: #6FFFCD;
+    color: white;
+    border-color: black;
+    cursor: pointer;
+  
+    font-family: cursive;
+    color: black;
+    width: 45%;
+    border-color: black;
+}
+
+.delete-btn {
+    background-color: #6FFFCD;
+    border-color: black;
+    cursor: pointer;
+    border-radius: 4%;
+    font-family: cursive;
+    color: black;
+    width: 45%;
+}
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#task-list .completed {
+    text-decoration: line-through;
+    color: #888;
+}
 #time-display{
     font-weight: bolder;
 }
@@ -113,5 +153,8 @@ width: 21%;
     }
     #completed-cycles{ 
         font-size: large;
+    }
+    @media screen and (max-width) {
+        
     }
 }
