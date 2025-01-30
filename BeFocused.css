@@ -3,7 +3,7 @@
     padding: 0;
 } 
 body{
-    background-color: #64F2FF;
+    background-color: #4e5555;
 }
 .navbar {
 background-color:#6FFFCD;
@@ -22,16 +22,17 @@ h2{
 background-color : #6FFFCD;
 border-color: black;
 font-family: cursive;
-width: 21%;
-
+width: 52%;
 }
+
 #cont-1{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255 ,0.3);
     border-radius: 1%;
-    width: 53%;
-    height: 72%;
-    margin-left: 23%;
+    margin-bottom: -3%;
     margin-top: 3%;
+    width: 66%;
+    height: 72%;
+    margin-left: 17%;
 
 }
 #pomodoro-section{
@@ -44,37 +45,38 @@ width: 21%;
 .complete-btn{
     background-color: #6FFFCD;
     color: white;
-    border-color: black;
     cursor: pointer;
-  
     font-family: cursive;
     color: black;
-    width: 45%;
+    width: 62%;
     border-color: black;
+    margin-top: 10%;
+    
 }
 
 .delete-btn {
     background-color: #6FFFCD;
-    border-color: black;
+    color: white;
     cursor: pointer;
-    border-radius: 4%;
     font-family: cursive;
     color: black;
-    width: 45%;
+    width: 62%;
+    border-color: black;
+    margin: 15%;
+    
 }
 #task-list {
     list-style: none;
     padding: 0;
+    background-color: #ffffff;
 }
 
 #task-list li {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    padding: 17px;
+   
+    margin-bottom: -22px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+justify-content: space-between;
 }
 
 #task-list .completed {
