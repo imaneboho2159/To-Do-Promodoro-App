@@ -28,7 +28,7 @@ function loadTasks() {
           <strong>${task.title}</strong> (${task.priority})
           <p>${task.desc}</p>
         </div>
-        <div>
+        <div class="btoona">
           <button class="complete-btn">Complete</button>
           <button class="delete-btn">Delete</button>
         </div>
@@ -65,7 +65,7 @@ todoForm.addEventListener("submit", (e) => {
       <strong>${title}</strong> (${priority})
       <p>${desc}</p>
     </div>
-    <div>
+    <div class="btoona">
       <button class="complete-btn">Complete</button>
       <button class="delete-btn">Delete</button>
     </div>
@@ -89,3 +89,54 @@ todoForm.addEventListener("submit", (e) => {
     // Clear form
     todoForm.reset();
 });
+
+let timer;
+let isPaused = true;
+let workDuration = 25 * 60;
+let shortBreak = 5 * 60;
+let longBreak = 15 * 60;
+let currentTime = workDuration;
+let completedCycles = 0;
+
+const timeDisplay = document.getElementById("time-display");
+const startBtn = document.getElementById("start-btn");
+const pauseBtn = document.getElementById("pause-btn");
+const resetBtn = document.getElementById("reset-btn");
+const cyclesCount = document.getElementById("cycles-count");
+
+const updateTimerDisplay = () => {
+    const minutes = Math.floor(currentTime / 60).toString().padStart(2, "0");
+    const seconds = (currentTime % 60).toString().padStart(2, "0");
+    timeDisplay.textContent = `${minutes}:${seconds}`;
+};
+
+startBtn.addEventListener("click", () => {
+    if (isPaused) {
+        isPaused = false;
+        timer = setInterval(() => {
+            if (currentTime > 0) {
+                currentTime--;
+                updateTimerDisplay();
+            } else {
+                clearInterval(timer);
+                completedCycles++;
+                cyclesCount.textContent = completedCycles;
+                alert("Time's up! Take a break.");
+                currentTime = workDuration;
+            }
+        }, 1000);
+    }
+});
+
+pauseBtn.addEventListener("click", () => {
+    clearInterval(timer);
+    isPaused = true;
+});
+
+resetBtn.addEventListener("click", () => {
+    clearInterval(timer);
+    isPaused = true;
+    currentTime = workDuration;
+    updateTimerDisplay();
+});
+
