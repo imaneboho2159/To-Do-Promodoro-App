@@ -140,3 +140,19 @@ resetBtn.addEventListener("click", () => {
     updateTimerDisplay();
 });
 
+
+document.getElementById("work-duration").addEventListener("change", (e) => {
+    workDuration = e.target.value * 60;
+    currentTime = workDuration;
+    updateTimerDisplay();
+});
+
+document.getElementById("short-break").addEventListener("change", (e) => {
+    shortBreak = e.target.value * 60;
+});
+
+document.getElementById("long-break").addEventListener("change", (e) => {
+    longBreak = e.target.value * 60;
+});
+
+updateTimerDisplay();
